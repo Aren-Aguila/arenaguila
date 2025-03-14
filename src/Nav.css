@@ -1,0 +1,43 @@
+.sidenav {
+    height: 100%;   
+    position: fixed; 
+    z-index: 1; 
+    top: 0; 
+    left: 0; 
+    background-color: #232323; 
+    overflow-x: hidden; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+    gap: 2rem;
+    padding-top: 20px;
+    width: 15%;
+}
+
+.navElem {
+    text-decoration: none;
+    color: #FFFCE8;
+    font-family: "Inter";
+    font-size: 2em;
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2em;
+    cursor: pointer;
+    align-self: flex-start;
+    margin-left: 10px;
+}
+
+.open-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2em;
+    cursor: pointer;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+}

@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import SideNav from "./sideNav";
+import "./App.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 
+document.body.style.backgroundColor = "#2b2118";
 function App() {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <button className="open-btn" onClick={() => setIsOpen(true)}>
+        <FontAwesomeIcon icon={faBars} />
+      </button>
+      <SideNav isOpen={isOpen} closeNav={() => setIsOpen(false)} />
     </div>
   );
 }
 
 export default App;
+
