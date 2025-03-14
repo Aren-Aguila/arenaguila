@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Aren-Aguila/static/css/main.c21b1a68.css",
+    "main.js": "/Aren-Aguila/static/js/main.e80c17ad.js",
+    "static/js/787.d4aba7ab.chunk.js": "/Aren-Aguila/static/js/787.d4aba7ab.chunk.js",
+    "index.html": "/Aren-Aguila/index.html",
+    "main.c21b1a68.css.map": "/Aren-Aguila/static/css/main.c21b1a68.css.map",
+    "main.e80c17ad.js.map": "/Aren-Aguila/static/js/main.e80c17ad.js.map",
+    "787.d4aba7ab.chunk.js.map": "/Aren-Aguila/static/js/787.d4aba7ab.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c21b1a68.css",
+    "static/js/main.e80c17ad.js"
+  ]
+}
