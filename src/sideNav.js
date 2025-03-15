@@ -4,6 +4,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTimes } from "@fortawesome/free-solid-svg-icons";
 import "./Nav.css";
 
+const scrollToSection = (id) => {
+  const element = document.getElementById(id);
+  if (element) {
+    element.scrollIntoView({ behavior: "smooth" });
+  }
+};
+
 const SideNav = ({ isOpen, closeNav }) => {
   return (
     <motion.div
@@ -13,12 +20,54 @@ const SideNav = ({ isOpen, closeNav }) => {
       transition={{ duration: 0.5, ease: "easeInOut", type: "spring" }}
     >
       <button onClick={closeNav} className="close-btn">
-        <FontAwesomeIcon icon={faTimes}/>
+        <FontAwesomeIcon icon={faTimes} />
       </button>
-      <a href="#section" className="navElem">Who?</a>
-      <a href="#section" className="navElem">What?</a>
-      <a href="#section" className="navElem">Where?</a>
-      <a href="#section" className="navElem">Why?</a>
+      <motion.button 
+      onClick={() => scrollToSection("who")} 
+      className="navElem"
+      whileHover={{
+        scale: 1.2,
+        rotate: 0,
+        transition: { duration: 0.5, type: "spring", bounce: 0.5 },
+        cursor: "pointer",
+    }}
+      whileTap={{ scale: 1.1 }}
+      >
+        Who
+      </motion.button>
+      <motion.button 
+      onClick={() => scrollToSection("port")} 
+      className="navElem"
+      whileHover={{
+        scale: 1.2,
+        rotate: 0,
+        transition: { duration: 0.5, type: "spring", bounce: 0.5 },
+        cursor: "pointer",
+      }}>
+      Portfolio
+      </motion.button>
+      <motion.button 
+      onClick={() => scrollToSection("about")} 
+      className="navElem"
+      whileHover={{
+        scale: 1.2,
+        rotate: 0,
+        transition: { duration: 0.5, type: "spring", bounce: 0.5 },
+        cursor: "pointer",
+      }}>
+      About
+      </motion.button>
+      <motion.button 
+      onClick={() => scrollToSection("contact")} 
+      className="navElem"
+      whileHover={{
+        scale: 1.2,
+        rotate: 0,
+        transition: { duration: 0.5, type: "spring", bounce: 0.5 },
+        cursor: "pointer",
+      }}>
+      Contact Info
+      </motion.button>
     </motion.div>
   );
 };

@@ -3,28 +3,46 @@ import SideNav from "./sideNav";
 import Portfolio from "./portfolio";
 import About from "./about";
 import Contact from "./contact";
-import {motion} from "motion/react";
+import {color, motion, useScroll, useSpring, useTransform} from "motion/react";
 import ArenImg from './arenFilter.png';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faHandPeace } from "@fortawesome/free-solid-svg-icons";
 import { text } from "@fortawesome/fontawesome-svg-core";
 import Noise from "./nnnoise.svg";
+import Lenis from "lenis";
 import "./App.css";
-
 
 function App() {
   useEffect(() => {
     document.body.style.backgroundImage = `url(${Noise})`;
-    document.body.style.backgroundSize = "cover"; // Optional: Adjust background size
+    document.body.style.backgroundSize = "cover"; // background size
     document.body.style.backgroundRepeat = "no-repeat"; // Prevent repetition
   }, []); // Runs once when the component mounts
   const [isOpen, setIsOpen] = useState(false);
 
+  useEffect( () => {
+    const lenis = new Lenis()
+    
+    function raf(time) {
+        lenis.raf(time)
+        requestAnimationFrame(raf)
+    }
+    
+    requestAnimationFrame(raf)
+    }, [])
+
   return (
     <div className="App">
-      <button className="open-btn" onClick={() => setIsOpen(true)}>
-        <FontAwesomeIcon icon={faBars} />
-      </button>
+      <motion.button 
+        className="open-btn" 
+        onClick={() => setIsOpen(true)}
+        whileHover={{
+          color: "#177E89",
+          transition: { duration: 0.2, type: "spring" }, // Move duration inside transition
+        }}
+        >
+      <FontAwesomeIcon icon={faBars} style={{fontSize: "1.5em"}}/>
+      </motion.button>
       <SideNav isOpen={isOpen} closeNav={() => setIsOpen(false)} />
       {/* Introduction Segment */}
       <div className="hiContainer">
@@ -49,19 +67,19 @@ function App() {
           >
               <FontAwesomeIcon icon={faHandPeace}/>
           </motion.div>
-           Hi, I'm Aren Aguila
+          Hi, I'm Aren Aguila
           <p style={{fontSize:"0.4em", backgroundColor: "transparent"}}>
           I'm a front-end web developer and UI/UX designer, specialising in innovative design and accessibility
           </p>
         </motion.div>
-            <img src={ArenImg} alt="ArenImg" className="arenImg"></img>            
+        <div id="who"><img src={ArenImg} alt="ArenImg" className="arenImg"></img></div>           
       </div>
       {/* Portfolio Segment*/}
-        <Portfolio/>
+        <div id="port"><Portfolio/></div>
       {/* About Me Segment */}
-        <About/>
-      {/* Contact Me Segment */}
-        <Contact />
+        <div id="about"><About/></div>
+      {/* Contact Me Segment 
+        <div id="contact"><Contact/> </div> */}
     </div>
   );
 }
