@@ -15,10 +15,10 @@ const SideNav = ({ isOpen, closeNav }) => {
       <button onClick={closeNav} className="close-btn">
         <FontAwesomeIcon icon={faTimes}/>
       </button>
-      <a href="#section" className="navElem">Who am I?</a>
-      <a href="#section" className="navElem">What am I?</a>
-      <a href="#section" className="navElem">Where am I?</a>
-      <a href="#section" className="navElem">Why am I?</a>
+      <a href="#section" className="navElem">Who?</a>
+      <a href="#section" className="navElem">What?</a>
+      <a href="#section" className="navElem">Where?</a>
+      <a href="#section" className="navElem">Why?</a>
     </motion.div>
   );
 };
