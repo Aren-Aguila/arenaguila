@@ -10,10 +10,10 @@ const SideNav = ({ isOpen, closeNav }) => {
       className="sidenav"
       initial={{ x: "-100%" }}
       animate={{ x: isOpen ? "0%" : "-100%" }}
-      transition={{ duration: 0.5, ease: "easeInOut" }}
+      transition={{ duration: 0.5, ease: "easeInOut", type: "spring" }}
     >
       <button onClick={closeNav} className="close-btn">
-        <FontAwesomeIcon icon={faTimes} />
+        <FontAwesomeIcon icon={faTimes}/>
       </button>
       <a href="#section" className="navElem">Who am I?</a>
       <a href="#section" className="navElem">What am I?</a>
