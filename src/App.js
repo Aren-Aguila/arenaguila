@@ -25,17 +25,18 @@ function App() {
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{
-              duration: 1,
-              scale: { type: "spring", visualDuration: 1, bounce: 0.25 },
+              duration: 0.7,
+              scale: { type: "spring", visualDuration: 1 },
           }}
           >
           <motion.div
-            initial = {{opacity: 0, rotate: 20}}
+          style={{color: "#A8763E"}}
+            initial = {{opacity: 0, rotate: -20}}
             animate = {{opacity: 1, rotate: 0}}
             transition={{
-              duration: 1,
-              scale: { type: "spring", visualDuration: 1, bounce: 0.5 },
-          }}
+              duration: 0.5,
+              scale: { type: "tween", visualDuration: 0.5, bounce: 1 },
+            }}
           >
               <FontAwesomeIcon icon={faHandPeace}/>
           </motion.div>
@@ -44,17 +45,7 @@ function App() {
             I'm a front-end web developer and UI/UX designer
           </p>
         </motion.div>
-        <motion.div
-          initial={{ opacity: 0.9, scale: 0.8 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{
-              delay: 0.5,
-              duration: 1,
-              scale: { type: "spring", visualDuration: 1, bounce: 0.25 },
-          }}
-          >
             <img src={ArenImg} alt="ArenImg" className="arenImg"></img>            
-          </motion.div>
       </div>
       {/* Portfolio Segment*/}
         <Portfolio/>

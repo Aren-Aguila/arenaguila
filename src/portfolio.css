@@ -9,7 +9,17 @@
     justify-content: center;
     align-items: center;
     margin: auto;
+    margin-top: 2rem;
     width: 70vw;
     max-width: 75%;
-    gap: 6rem;
-  }
+    gap: 5rem;
+}
+
+.portfolioCard {
+    text-align: center;
+    border: 3px solid #A8763E;
+    border-radius: 1rem;
+    height: 25rem;
+    width: 25%;
+    max-width: 25%;
+}
