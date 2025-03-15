@@ -1,16 +1,17 @@
 {
   "files": {
-    "main.css": "/Aren-Aguila/static/css/main.ce887428.css",
-    "main.js": "/Aren-Aguila/static/js/main.a04d6926.js",
+    "main.css": "/Aren-Aguila/static/css/main.1dce4eee.css",
+    "main.js": "/Aren-Aguila/static/js/main.f97b1d35.js",
     "static/js/453.ed3810f9.chunk.js": "/Aren-Aguila/static/js/453.ed3810f9.chunk.js",
     "static/media/Aren.jpg": "/Aren-Aguila/static/media/Aren.c156c9636851566bd260.jpg",
     "index.html": "/Aren-Aguila/index.html",
-    "main.ce887428.css.map": "/Aren-Aguila/static/css/main.ce887428.css.map",
-    "main.a04d6926.js.map": "/Aren-Aguila/static/js/main.a04d6926.js.map",
+    "static/media/nnnoise.svg": "/Aren-Aguila/static/media/nnnoise.cf8abbad81859dc3b485f08547a10359.svg",
+    "main.1dce4eee.css.map": "/Aren-Aguila/static/css/main.1dce4eee.css.map",
+    "main.f97b1d35.js.map": "/Aren-Aguila/static/js/main.f97b1d35.js.map",
     "453.ed3810f9.chunk.js.map": "/Aren-Aguila/static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ce887428.css",
-    "static/js/main.a04d6926.js"
+    "static/css/main.1dce4eee.css",
+    "static/js/main.f97b1d35.js"
   ]
 }
