@@ -36,7 +36,7 @@ function App() {
           }}
           >
           <motion.div
-          style={{color: "#A8763E"}}
+          style={{color: "#A8763E", backgroundColor: "transparent"}}
             initial = {{opacity: 0, rotate: -20}}
             animate = {{opacity: 1, rotate: 0}}
             transition={{
@@ -47,7 +47,7 @@ function App() {
               <FontAwesomeIcon icon={faHandPeace}/>
           </motion.div>
            Hi, I'm Aren Aguila
-          <p style={{fontSize:"0.4em"}}>
+          <p style={{fontSize:"0.4em", backgroundColor: "transparent"}}>
             I'm a front-end web developer and UI/UX designer
           </p>
         </motion.div>

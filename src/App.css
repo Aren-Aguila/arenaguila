@@ -13,5 +13,24 @@
 }
 
 .arenImg {
-  height: 100vh;
+  display: block;
+}
+
+@media (max-width: 1100px) {
+  .hiContainer {
+    flex-direction: column; /* Stack elements */
+    width: 100%;
+    gap: 0; /* Reduce spacing */
+  }
+
+  .hiContainer div {
+    position: absolute; /* Allows elements to overlap */
+    z-index: 2; /* Ensures text is above image */
+    width: 100vw;
+    font-size: clamp(1.5rem, 4vw, 3em);
+    text-align: center;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: Semi-transparent background */
+  }
 }
