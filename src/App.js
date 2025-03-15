@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import SideNav from "./sideNav";
 import Portfolio from "./portfolio";
+import About from "./about";
+import Contact from "./contact";
 import {motion} from "motion/react";
 import ArenImg from './ArenFilter.jpg';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -49,13 +51,17 @@ function App() {
           </motion.div>
            Hi, I'm Aren Aguila
           <p style={{fontSize:"0.4em", backgroundColor: "transparent"}}>
-            I'm a front-end web developer and UI/UX designer
+          I'm a front-end web developer and UI/UX designer, specialising in modern design and accessibility
           </p>
         </motion.div>
             <img src={ArenImg} alt="ArenImg" className="arenImg"></img>            
       </div>
       {/* Portfolio Segment*/}
         <Portfolio/>
+      {/* About Me Segment */}
+        <About/>
+      {/* Contact Me Segment */}
+        <Contact />
     </div>
   );
 }

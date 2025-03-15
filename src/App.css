@@ -1,5 +1,5 @@
 .hiContainer {
-  font-family: "Inter";
+  font-family: "NPS";
   color: #FFFCE8;
   font-size: 4em;
   display: flex;
@@ -10,6 +10,8 @@
   width: 70vw;
   max-width: 75%;
   gap: 6rem;
+  border-bottom: 3px solid #177E89;
+  padding-bottom: 3rem;
 }
 
 .arenImg {

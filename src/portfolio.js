@@ -59,8 +59,9 @@ function portfolio() {
                 <a href="https://vista.ucmerced.edu/f3/"><span></span></a>
                 <img src={F3} alt="f3pic" className="cardimg"></img>
              </motion.div>
-             <motion.div 
+             {/*<motion.div 
                 className="card" 
+                style={{color: "#6F1A07"}}
                 variants={cardVariants}
                 whileHover={{
                     scale: 1.2,
@@ -71,8 +72,8 @@ function portfolio() {
                   whileTap={{ scale: 1.1 }}
             >
                 UniFoodi
-                {/*<a href="https://securewaterfuture.net/"><span></span></a>*/}
-             </motion.div>
+                <a href="https://securewaterfuture.net/"><span></span></a>
+             </motion.div>*/}
         </motion.div>
     </div>
     );
@@ -83,7 +84,7 @@ const cardVariants = {
         y: "20rem",
     },
     onscreen: {
-        y: "5rem",
+        y: "1rem",
         rotate: -10,
         transition: {
             type: "spring",
