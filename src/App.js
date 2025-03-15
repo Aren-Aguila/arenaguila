@@ -51,7 +51,7 @@ function App() {
           </motion.div>
            Hi, I'm Aren Aguila
           <p style={{fontSize:"0.4em", backgroundColor: "transparent"}}>
-          I'm a front-end web developer and UI/UX designer, specialising in modern design and accessibility
+          I'm a front-end web developer and UI/UX designer, specialising in innovative design and accessibility
           </p>
         </motion.div>
             <img src={ArenImg} alt="ArenImg" className="arenImg"></img>            
