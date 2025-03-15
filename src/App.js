@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import SideNav from "./sideNav";
 import Portfolio from "./portfolio";
 import {motion} from "motion/react";
@@ -6,10 +6,16 @@ import ArenImg from './Aren.jpg';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faHandPeace } from "@fortawesome/free-solid-svg-icons";
 import { text } from "@fortawesome/fontawesome-svg-core";
+import Noise from "./nnnoise.svg";
 import "./App.css";
 
-document.body.style.backgroundColor = "#2b2118";
+
 function App() {
+  useEffect(() => {
+    document.body.style.backgroundImage = `url(${Noise})`;
+    document.body.style.backgroundSize = "cover"; // Optional: Adjust background size
+    document.body.style.backgroundRepeat = "no-repeat"; // Prevent repetition
+  }, []); // Runs once when the component mounts
   const [isOpen, setIsOpen] = useState(false);
 
   return (
