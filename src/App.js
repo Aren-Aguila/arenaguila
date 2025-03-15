@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import SideNav from "./sideNav";
 import Portfolio from "./portfolio";
 import {motion} from "motion/react";
-import ArenImg from './Aren.jpg';
+import ArenImg from './ArenFilter.jpg';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faHandPeace } from "@fortawesome/free-solid-svg-icons";
 import { text } from "@fortawesome/fontawesome-svg-core";
@@ -36,6 +36,7 @@ function App() {
           }}
           >
           <motion.div
+          className="peace"
           style={{color: "#A8763E", backgroundColor: "transparent"}}
             initial = {{opacity: 0, rotate: -20}}
             animate = {{opacity: 1, rotate: 0}}

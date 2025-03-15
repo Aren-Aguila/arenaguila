@@ -31,6 +31,10 @@
     text-align: center;
     padding: 1rem;
     border-radius: 10px;
-    background-color: rgba(0, 0, 0, 0.5); /* Optional: Semi-transparent background */
+    background-color: #2B2118; /* Optional: Semi-transparent background */
+  }
+
+  .peace {
+    visibility: hidden;
   }
 }

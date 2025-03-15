@@ -1,5 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
+import Swf from "./swfFilter.jpg";
+import Vista from "./vistaFilter.jpg";
+import F3 from "./f3Filter.jpg"
 import "./portfolio.css";
 
 function portfolio() {
@@ -23,6 +26,8 @@ function portfolio() {
                   whileTap={{ scale: 1.1 }}
             >
                 SWF
+                <a href="https://securewaterfuture.net/"><span></span></a>
+                <img src={Swf} alt="swfpic" className="cardimg"></img>
             </motion.div>
             <motion.div 
                 className="card" 
@@ -36,6 +41,8 @@ function portfolio() {
                   whileTap={{ scale: 1.1 }}
             >
                     VISTA
+                    <a href="https://vista.ucmerced.edu/"><span></span></a>
+                    <img src={Vista} alt="vistapic" className="cardimg"></img>
             </motion.div>
             <motion.div 
                 className="card" 
@@ -49,6 +56,8 @@ function portfolio() {
                   whileTap={{ scale: 1.1 }}
             >
                 F3
+                <a href="https://vista.ucmerced.edu/f3/"><span></span></a>
+                <img src={F3} alt="f3pic" className="cardimg"></img>
              </motion.div>
              <motion.div 
                 className="card" 
@@ -62,6 +71,7 @@ function portfolio() {
                   whileTap={{ scale: 1.1 }}
             >
                 UniFoodi
+                {/*<a href="https://securewaterfuture.net/"><span></span></a>*/}
              </motion.div>
         </motion.div>
     </div>
