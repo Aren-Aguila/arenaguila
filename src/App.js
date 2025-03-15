@@ -4,7 +4,7 @@ import Portfolio from "./portfolio";
 import About from "./about";
 import Contact from "./contact";
 import {motion} from "motion/react";
-import ArenImg from './ArenFilter.jpg';
+import ArenImg from './arenFilter.png';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faHandPeace } from "@fortawesome/free-solid-svg-icons";
 import { text } from "@fortawesome/fontawesome-svg-core";
