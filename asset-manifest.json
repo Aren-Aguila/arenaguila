@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/arenaguila/static/css/main.1dce4eee.css",
-    "main.js": "/arenaguila/static/js/main.9d98d560.js",
+    "main.css": "/arenaguila/static/css/main.e5f8b99d.css",
+    "main.js": "/arenaguila/static/js/main.8a96c9c9.js",
     "static/js/453.ed3810f9.chunk.js": "/arenaguila/static/js/453.ed3810f9.chunk.js",
     "static/media/Aren.jpg": "/arenaguila/static/media/Aren.c156c9636851566bd260.jpg",
     "index.html": "/arenaguila/index.html",
     "static/media/nnnoise.svg": "/arenaguila/static/media/nnnoise.cf8abbad81859dc3b485f08547a10359.svg",
-    "main.1dce4eee.css.map": "/arenaguila/static/css/main.1dce4eee.css.map",
-    "main.9d98d560.js.map": "/arenaguila/static/js/main.9d98d560.js.map",
+    "main.e5f8b99d.css.map": "/arenaguila/static/css/main.e5f8b99d.css.map",
+    "main.8a96c9c9.js.map": "/arenaguila/static/js/main.8a96c9c9.js.map",
     "453.ed3810f9.chunk.js.map": "/arenaguila/static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1dce4eee.css",
-    "static/js/main.9d98d560.js"
+    "static/css/main.e5f8b99d.css",
+    "static/js/main.8a96c9c9.js"
   ]
 }
