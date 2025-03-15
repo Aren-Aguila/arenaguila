@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/Aren-Aguila/static/css/main.e22fd0df.css",
-    "main.js": "/Aren-Aguila/static/js/main.b70ab678.js",
+    "main.js": "/Aren-Aguila/static/js/main.14627f76.js",
     "static/js/453.ed3810f9.chunk.js": "/Aren-Aguila/static/js/453.ed3810f9.chunk.js",
     "static/media/Aren.jpg": "/Aren-Aguila/static/media/Aren.c156c9636851566bd260.jpg",
     "index.html": "/Aren-Aguila/index.html",
     "main.e22fd0df.css.map": "/Aren-Aguila/static/css/main.e22fd0df.css.map",
-    "main.b70ab678.js.map": "/Aren-Aguila/static/js/main.b70ab678.js.map",
+    "main.14627f76.js.map": "/Aren-Aguila/static/js/main.14627f76.js.map",
     "453.ed3810f9.chunk.js.map": "/Aren-Aguila/static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e22fd0df.css",
-    "static/js/main.b70ab678.js"
+    "static/js/main.14627f76.js"
   ]
 }
