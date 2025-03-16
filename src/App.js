@@ -72,10 +72,12 @@ function App() {
           >
               <FontAwesomeIcon icon={faHandPeace}/>
           </motion.div>
-          Hi, I'm Aren Aguila
-          <p style={{fontSize:"0.4em", backgroundColor: "transparent"}}>
-          I'm a front-end web developer and UI/UX designer, specialising in innovative design and accessibility
-          </p>
+           <div className= "intro">
+              Hi, I'm Aren Aguila
+              <p style={{fontSize:"0.4em", backgroundColor: "transparent"}}>
+                  I'm a front-end web developer and UI/UX designer, specialising in innovative design and accessibility
+              </p>
+          </div>
         </motion.div>
         <motion.div 
           id="who"
@@ -92,8 +94,10 @@ function App() {
       </div>
       {/* Portfolio Segment*/}
         <div id="port"><Portfolio/></div>
+
       {/* About Me Segment */}
-        <div id="about"><About/></div>
+      <div id="about"><About/></div>
+
       {/* Contact Me Segment 
         <div id="contact"><Contact/> </div> */}
     </div>

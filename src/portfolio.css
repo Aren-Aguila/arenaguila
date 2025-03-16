@@ -1,3 +1,12 @@
+.portfolioBody {
+    margin-top: 3rem;
+    height: 100vh;
+    max-height: 100vh;
+    /* border: 3px solid white; */
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
 .cardContainer {
     width: 70vw;
     height: 60vh;
@@ -10,6 +19,7 @@
     align-items: center;
     margin: auto;
     margin-bottom: 5rem;
+    margin-top: 0;
     max-width: 75%;
     gap: 5rem;
     border-bottom: 3px solid #177E89;
@@ -19,13 +29,12 @@
 .card {
     position: relative;
     text-align: center;
-    border: thick double #A8763E;
-    border-radius: 1rem;
-    height: 25rem;
+    height: 26rem;
     width: 25%;
     max-width: 25%;
     transform-origin: "10% 60%";
-    color: #FFFCE8;
+    border: 0.3rem solid #A8763E;
+    border-radius: 1rem;
 }
 
 .cardimg{
@@ -34,12 +43,12 @@
     height: 70%;
     display: block;
     margin: auto;
+    padding-top: 1rem;
 }
 
 .title {
     font-size: 4em;
     font-family: "NPS";
-    margin-top: 6rem;
     color: #FFFCE8;
 }
 
