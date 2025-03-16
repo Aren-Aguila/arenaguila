@@ -3,11 +3,10 @@ import SideNav from "./sideNav";
 import Portfolio from "./portfolio";
 import About from "./about";
 import Contact from "./contact";
-import {color, motion, useScroll, useSpring, useTransform} from "motion/react";
+import {motion, useScroll, useSpring, useTransform} from "motion/react";
 import ArenImg from './arenFilter.png';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faHandPeace } from "@fortawesome/free-solid-svg-icons";
-import { text } from "@fortawesome/fontawesome-svg-core";
 import Noise from "./nnnoise.svg";
 import Lenis from "lenis";
 import "./App.css";
@@ -19,6 +18,10 @@ function App() {
     document.body.style.backgroundRepeat = "no-repeat"; // Prevent repetition
   }, []); // Runs once when the component mounts
   const [isOpen, setIsOpen] = useState(false);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   useEffect( () => {
     const lenis = new Lenis()
@@ -48,11 +51,11 @@ function App() {
       <div className="hiContainer">
         <motion.div 
           style={{textAlign: "left"}}
-          initial={{ opacity: 0, scale: 0.8 }}
-          animate={{ opacity: 1, scale: 1 }}
+          initial={{ opacity: 0, translateY: 150 }}
+          animate={{ opacity: 1, translateY: 0 }}
           transition={{
-              duration: 0.7,
-              scale: { type: "spring", visualDuration: 1 },
+              duration: 1,
+              scale: { type: "spring", visualDuration: 1, bounce: 0.6 },
           }}
           >
           <motion.div
@@ -62,7 +65,9 @@ function App() {
             animate = {{opacity: 1, rotate: 0}}
             transition={{
               duration: 0.5,
-              scale: { type: "tween", visualDuration: 0.5, bounce: 1 },
+              delay: 1,
+              type: "spring", 
+              bounce: 0.5,
             }}
           >
               <FontAwesomeIcon icon={faHandPeace}/>
@@ -72,7 +77,18 @@ function App() {
           I'm a front-end web developer and UI/UX designer, specialising in innovative design and accessibility
           </p>
         </motion.div>
-        <div id="who"><img src={ArenImg} alt="ArenImg" className="arenImg"></img></div>           
+        <motion.div 
+          id="who"
+          initial = {{opacity: 0, rotate: 0, scale: 1.2}}
+          animate = {{opacity: 1, rotate: 5, scale: 1}}
+          transition={{
+            duration: 0.7,
+            delay: 0.5,
+            scale: { type: "spring", visualDuration: 0.7, bounce: 0.6 },
+          }}
+        >
+            <img src={ArenImg} alt="ArenImg" className="arenImg"></img>
+          </motion.div>           
       </div>
       {/* Portfolio Segment*/}
         <div id="port"><Portfolio/></div>

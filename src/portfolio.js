@@ -8,7 +8,7 @@ import "./portfolio.css";
 function portfolio() {
     return (
         <div className="portfolioBody">
-            <div className="title" style={{textAlign: "center"}}>My portfolio</div>
+            <div className="title" style={{textAlign: "center"}}>My Portfolio</div>
         <motion.div className="cardContainer"
             initial="offscreen"
             whileInView="onscreen"
