@@ -21,6 +21,11 @@ function about() {
                     I am an upcoming student at the University of California, Merced where I am studying Computer Science & Engineering.
                     I am skilled in Javascript, REACT, HTML/CSS, C++ and Python
                 </p>
+                <p className="aboutPara">
+                    Let's get in touch!
+                    <a href="https://www.linkedin.com/in/aren-aguila-454072197/"> Linkedin </a>
+                    arenaguila02@gmail.com
+                </p>
             </div>
         </div>
     );
