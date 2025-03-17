@@ -1,5 +1,4 @@
 import React from "react";
-import { motion } from "framer-motion";
 import Html from "./htmlicon.png";
 import Css from "./cssicon.png";
 import Js from "./jsicon.png";

@@ -57,17 +57,6 @@ const SideNav = ({ isOpen, closeNav }) => {
       }}>
       About
       </motion.button>
-      <motion.button 
-      onClick={() => scrollToSection("contact")} 
-      className="navElem"
-      whileHover={{
-        scale: 1.2,
-        rotate: 0,
-        transition: { duration: 0.5, type: "spring", bounce: 0.5 },
-        cursor: "pointer",
-      }}>
-      Contact Info
-      </motion.button>
     </motion.div>
   );
 };
