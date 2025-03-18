@@ -23,7 +23,7 @@ function about() {
                 </p>
                 <p className="aboutPara" >
                     Let's get in touch!
-                    <a href="https://www.linkedin.com/in/aren-aguila-454072197/"> Linkedin </a>
+                    <br></br><a href="https://www.linkedin.com/in/aren-aguila-454072197/" style={{color: "#177e89"}}> Linkedin </a>
                     arenaguila02@gmail.com
                 </p>
             </div>
