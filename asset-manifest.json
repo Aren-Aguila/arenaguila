@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/arenaguila/static/css/main.33bc92c1.css",
-    "main.js": "/arenaguila/static/js/main.46ba3360.js",
+    "main.css": "/arenaguila/static/css/main.df1b0eb4.css",
+    "main.js": "/arenaguila/static/js/main.b5dab23c.js",
     "static/js/453.ed3810f9.chunk.js": "/arenaguila/static/js/453.ed3810f9.chunk.js",
     "static/media/swfFilter.jpg": "/arenaguila/static/media/swfFilter.60d66387210a7b6a0bac.jpg",
     "static/media/vistaFilter.jpg": "/arenaguila/static/media/vistaFilter.54a6bd4bf72a0c603ea1.jpg",
@@ -11,12 +11,12 @@
     "static/media/reacticon.png": "/arenaguila/static/media/reacticon.44ac42b34dd25cd5bcb9.png",
     "index.html": "/arenaguila/index.html",
     "static/media/nnnoise.svg": "/arenaguila/static/media/nnnoise.cf8abbad81859dc3b485f08547a10359.svg",
-    "main.33bc92c1.css.map": "/arenaguila/static/css/main.33bc92c1.css.map",
-    "main.46ba3360.js.map": "/arenaguila/static/js/main.46ba3360.js.map",
+    "main.df1b0eb4.css.map": "/arenaguila/static/css/main.df1b0eb4.css.map",
+    "main.b5dab23c.js.map": "/arenaguila/static/js/main.b5dab23c.js.map",
     "453.ed3810f9.chunk.js.map": "/arenaguila/static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.33bc92c1.css",
-    "static/js/main.46ba3360.js"
+    "static/css/main.df1b0eb4.css",
+    "static/js/main.b5dab23c.js"
   ]
 }
