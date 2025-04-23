@@ -2,7 +2,8 @@ import React from "react";
 import { motion } from "framer-motion";
 import Swf from "./swfFilter.jpg";
 import Vista from "./vistaFilter.jpg";
-import F3 from "./f3Filter.jpg"
+import F3 from "./f3Filter.jpg";
+import foodi from "./unifoodi.PNG";
 import "./portfolio.css";
 
 function portfolio() {
@@ -60,9 +61,8 @@ function portfolio() {
                 F3
                 <a href="https://vista.ucmerced.edu/f3/"><span></span></a>
              </motion.div>
-             {/*<motion.div 
+             <motion.div 
                 className="card" 
-                style={{color: "#6F1A07"}}
                 variants={cardVariants}
                 whileHover={{
                     scale: 1.2,
@@ -72,9 +72,10 @@ function portfolio() {
                 }}
                   whileTap={{ scale: 1.1 }}
             >
+                <img src={foodi} alt="foodipic" className="cardimg"></img>
                 UniFoodi
-                <a href="https://securewaterfuture.net/"><span></span></a>
-             </motion.div>*/}
+                <a href="http://ec2-54-197-77-123.compute-1.amazonaws.com/"><span></span></a>
+             </motion.div>
         </motion.div>
     </div>
     );
