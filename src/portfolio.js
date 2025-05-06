@@ -74,7 +74,7 @@ function portfolio() {
             >
                 <img src={foodi} alt="foodipic" className="cardimg"></img>
                 UniFoodi
-                <a href="http://ec2-54-197-77-123.compute-1.amazonaws.com/"><span></span></a>
+                <a href="http://capstone.unifoodie.xyz/"><span></span></a>
              </motion.div>
         </motion.div>
     </div>
