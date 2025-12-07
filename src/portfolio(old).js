@@ -3,22 +3,29 @@ import { motion } from "framer-motion";
 import Swf from "./swfFilter.jpg";
 import Vista from "./vistaFilter.jpg";
 import F3 from "./f3Filter.jpg";
+import foodi from "./unifoodi.PNG";
 import "./portfolio.css";
 import "./App.css";
 
 function portfolio() {
     return (
         <div className="portfolioBody">
-            <div className="title" style={{textAlign: "center"}}>Featured Work</div>
-        <motion.div className="cardContainer">
-            <motion.div
-                className="card"
+            <div className="title" style={{textAlign: "center"}}>My Portfolio</div>
+        <motion.div className="cardContainer"
+            initial="offscreen"
+            whileInView="onscreen"
+            viewport={{ amount: 0.8 }}
+        >
+            <motion.div 
+                className="card" 
+                variants={cardVariants}
                 whileHover={{
-                    scale: 1.05,
+                    scale: 1.1,
+                    rotate: 0,
                     transition: { duration: 0.5, type: "spring", bounce: 0.3 },
                     cursor: "pointer",
                 }}
-                  whileTap={{ scale: 1.025 }}
+                  whileTap={{ scale: 1.1 }}
             >
                 <img src={Swf} alt="swfpic" className="cardimg"></img>
                 SWF
@@ -27,12 +34,14 @@ function portfolio() {
             </motion.div>
             <motion.div 
                 className="card" 
+                variants={cardVariants}
                 whileHover={{
-                    scale: 1.05,
+                    scale: 1.1,
+                    rotate: 0,
                     transition: { duration: 0.5, type: "spring", bounce: 0.3 },
                     cursor: "pointer",
                 }}
-                  whileTap={{ scale: 1.025 }}
+                  whileTap={{ scale: 1.05 }}
             >
                     <img src={Vista} alt="vistapic" className="cardimg"></img>
                     VISTA
@@ -40,20 +49,52 @@ function portfolio() {
             </motion.div>
             <motion.div 
                 className="card" 
+                variants={cardVariants}
                 whileHover={{
-                    scale: 1.05,
+                    scale: 1.1,
+                    rotate: 0,
                     transition: { duration: 0.5, type: "spring", bounce: 0.3 },
                     cursor: "pointer",
                 }}
-                  whileTap={{ scale: 1.025 }}
+                  whileTap={{ scale: 1.05 }}
             >
                 <img src={F3} alt="f3pic" className="cardimg"></img>
                 F3
                 <a href="https://vista.ucmerced.edu/f3/"><span></span></a>
              </motion.div>
+             <motion.div 
+                className="card" 
+                variants={cardVariants}
+                whileHover={{
+                    scale: 1.1,
+                    rotate: 0,
+                    transition: { duration: 0.5, type: "spring", bounce: 0.3 },
+                    cursor: "pointer",
+                }}
+                  whileTap={{ scale: 1.05 }}
+            >
+                <img src={foodi} alt="foodipic" className="cardimg"></img>
+                UniFoodi
+                <a href="http://capstone.unifoodie.xyz/"><span></span></a>
+             </motion.div>
         </motion.div>
     </div>
     );
 };
+
+const cardVariants = {
+    offscreen: {
+        y: "20rem",
+    },
+    onscreen: {
+        y: "1rem",
+        rotate: -3,
+        transition: {
+            type: "spring",
+            bounce: 0.4,
+            duration: 0.8,
+        },
+    },
+}
 
 export default portfolio;

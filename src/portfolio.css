@@ -1,5 +1,8 @@
 .portfolioBody {
-    margin-top: 3rem;
+    background-color: #B5DEAD;
+    border-top: solid #6A3E37 0.5rem;
+    border-bottom: solid #6A3E37 0.5rem;
+    margin-top: 2rem;
     height: 100vh;
     max-height: 100vh;
     width: 100vw;
@@ -13,8 +16,7 @@
 .cardContainer {
     width: 70vw;
     height: 60vh;
-    font-family: "NPS";
-    color: #FFFCE8;
+    color: #361F1C;
     font-size: 4em;
     display: flex;
     flex-direction: row;
@@ -25,19 +27,18 @@
     margin-top: 0;
     max-width: 75%;
     gap: 5rem;
-    border-bottom: 3px solid #177E89;
     overflow-y: clip;
 }
 
 .card {
     position: relative;
     text-align: center;
-    height: 25rem;
+    height: 20rem;
     width: 25%;
     max-width: 25%;
     transform-origin: "10% 60%";
-    border: 0.3rem solid #A8763E;
     border-radius: 1rem;
+    background-color: #FFFCE8;
 }
 
 .cardimg{
@@ -51,8 +52,7 @@
 
 .title {
     font-size: 4em;
-    font-family: "NPS";
-    color: #FFFCE8;
+    color: #361F1C;
 }
 
 span {

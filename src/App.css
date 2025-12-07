@@ -1,12 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 .App {
   width: 100dvw;
   max-width: 100%;
   height: 300vh;
 }
 .hiContainer {
-  font-family: "NPS";
-  color: #FFFCE8;
-  font-size: 4em;
+  font-family: "Inter";
+  color: #361F1C;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -20,8 +21,16 @@
   gap: 4rem;
 }
 
-.arenImg {
-  display: block;
+.intro {
+  background-color: #B5DEAD;
+  border-color: #361F1C;
+  border: solid 0.25rem;
+  border-radius: 0.5em;
+  padding: 2rem;
+  -webkit-border-radius: 0.5em;
+  -moz-border-radius: 0.5em;
+  -ms-border-radius: 0.5em;
+  -o-border-radius: 0.5em;
 }
 
 @media (max-width: 1100px) {
@@ -34,11 +43,6 @@
     margin-top: 0;
     margin-bottom: 0;
     flex-wrap: wrap;
-  }
-
-  .arenImg {
-    height: 50vh;
-    transform: rotate(-5deg);
   }
 
   .intro {

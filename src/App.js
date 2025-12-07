@@ -6,15 +6,13 @@ import Intro from "./intro";
 import {motion} from "motion/react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
-import Noise from "./nnnoise.svg";
 import Lenis from "lenis";
 import "./App.css";
 
 function App() {
   useEffect(() => {
-    document.body.style.backgroundImage = `url(${Noise})`;
+    document.body.style.backgroundColor = "#FFFCE8";
     document.body.style.backgroundSize = "cover"; // background size
-    document.body.style.backgroundRepeat = "no-repeat"; // Prevent repetition
   }, []); // Runs once when the component mounts
   const [isOpen, setIsOpen] = useState(false);
 
@@ -39,22 +37,22 @@ function App() {
         className="open-btn" 
         onClick={() => setIsOpen(true)}
         whileHover={{
-          color: "#177E89",
+          color: "#058ED9",
           transition: { duration: 0.2, type: "spring" }, // Move duration inside transition
         }}
         >
-      <FontAwesomeIcon icon={faBars} style={{fontSize: "1.5em"}}/>
+      <FontAwesomeIcon icon={faBars} style={{fontSize: "1.5em", color: "#361F1C"}} />
       </motion.button>
       <SideNav isOpen={isOpen} closeNav={() => setIsOpen(false)} />
 
       {/* Intro Segment */}
-      <div id="intro"><Intro /></div>
+        <div id="intro"><Intro/></div>
 
       {/* Portfolio Segment*/}
         <div id="port"><Portfolio/></div>
 
       {/* About Me Segment */}
-      <div id="about"><About/></div>
+        <div id="about"><About/></div>
 
       {/* Contact Me Segment 
         <div id="contact"><Contact/> </div> */}

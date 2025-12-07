@@ -23,7 +23,7 @@ const SideNav = ({ isOpen, closeNav }) => {
         <FontAwesomeIcon icon={faTimes} />
       </button>
       <motion.button 
-      onClick={() => scrollToSection("who")} 
+      onClick={() => scrollToSection("intro")} 
       className="navElem"
       whileHover={{
         scale: 1.2,

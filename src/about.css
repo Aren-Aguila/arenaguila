@@ -1,5 +1,4 @@
 .aboutContainer {
-    font-family: "NPS";
     color: #FFFCE8;
     width: 100vw;
     max-width: 100%;
@@ -11,17 +10,16 @@
 }
 
 .infoBox {
-    font-family: "NPS";
     color: #FFFCE8;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     margin: auto;
-    margin-top: 3rem;
+    margin-top: 2rem;
     height: 100%;
-    gap: 2rem;
-    padding-bottom: 3rem;
+    gap: 1rem;
+    padding-bottom: 4rem;
     flex-shrink: 1;
     /*border: 3px solid white;*/
 }
@@ -43,11 +41,22 @@
 
 
 p.aboutPara{
+    color: #361F1C;
+    font-size: 1.5em;
     width: auto;
     height: auto;
     margin: auto;
     margin-top: 1rem;
     font-size: 2em;
+    background-color: #B5DEAD;
+    border-color: #361F1C;
+    border: solid 0.25rem;
+    border-radius: 0.5em;
+    padding: 2rem;
+    -webkit-border-radius: 0.5em;
+    -moz-border-radius: 0.5em;
+    -ms-border-radius: 0.5em;
+    -o-border-radius: 0.5em;
 }
 
 @media (max-width: 1100px) {
