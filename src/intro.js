@@ -33,7 +33,7 @@ function intro() {
            <div className= "intro">
               Hi, I'm Aren Aguila.
               <p style={{fontSize:"0.4em", backgroundColor: "transparent"}}>
-                  I'm a front-end web developer and UI/UX designer. <br></br>
+                  I'm a full-stack web developer and UI/UX designer. <br></br>
                   Feel free to check out some of my work and get to know me!
               </p>
           </div>

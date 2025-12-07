@@ -18,8 +18,8 @@ function about() {
                 </div>
                 <p className="aboutPara" style={{width: "60%"}}>
                     Nice to meet you!
-                    I am an upcoming student at the University of California, Merced where I am studying Computer Science & Engineering.
-                    I am skilled in Javascript, REACT, HTML/CSS, C++ and Python
+                    I am a recent graduate University of California, Merced where I recieved my Bachelor's degree in Computer Science & Engineering.
+                    <p>I am skilled in Javascript, REACT, HTML/CSS, C++ and Python</p>
                 </p>
                 <p className="aboutPara" >
                     Let's get in touch!

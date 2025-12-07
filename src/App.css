@@ -7,6 +7,7 @@
 }
 .hiContainer {
   font-family: "Inter";
+  font-size: 4em;
   color: #361F1C;
   display: flex;
   flex-direction: row;
