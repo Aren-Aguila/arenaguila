@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/arenaguila/static/css/main.e335889a.css",
-    "main.js": "/arenaguila/static/js/main.23fe5b11.js",
+    "main.js": "/arenaguila/static/js/main.5d78344d.js",
     "static/js/453.ed3810f9.chunk.js": "/arenaguila/static/js/453.ed3810f9.chunk.js",
     "static/media/swfFilter.jpg": "/arenaguila/static/media/swfFilter.60d66387210a7b6a0bac.jpg",
     "static/media/vistaFilter.jpg": "/arenaguila/static/media/vistaFilter.54a6bd4bf72a0c603ea1.jpg",
@@ -11,11 +11,11 @@
     "static/media/reacticon.png": "/arenaguila/static/media/reacticon.44ac42b34dd25cd5bcb9.png",
     "index.html": "/arenaguila/index.html",
     "main.e335889a.css.map": "/arenaguila/static/css/main.e335889a.css.map",
-    "main.23fe5b11.js.map": "/arenaguila/static/js/main.23fe5b11.js.map",
+    "main.5d78344d.js.map": "/arenaguila/static/js/main.5d78344d.js.map",
     "453.ed3810f9.chunk.js.map": "/arenaguila/static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e335889a.css",
-    "static/js/main.23fe5b11.js"
+    "static/js/main.5d78344d.js"
   ]
 }
