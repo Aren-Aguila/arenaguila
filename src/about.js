@@ -5,30 +5,61 @@ import Js from "./jsicon.png";
 import Reacticon from "./reacticon.png";
 import "./about.css";
 
-function about() {
+function About() {
     return (
         <div className="aboutContainer">
-            <div className="title" style={{textAlign: "center"}}>About Me</div>
+            <div className="title" style={{ textAlign: "center" }}>About Me</div>
+            
             <div className="infoBox">
+                {/* Skills Icons */}
                 <div className="logos">
-                        <img className="icon" src={Html} alt="htmllogo"></img>
-                        <img className="icon" src={Css} alt="csslogo"></img>
-                        <img className="icon" src={Js} alt="jslogo"></img>
-                        <img className="icon" src={Reacticon} alt="reactlogo"></img>
+                    <img className="icon" src={Html} alt="HTML logo" />
+                    <img className="icon" src={Css} alt="CSS logo" />
+                    <img className="icon" src={Js} alt="JavaScript logo" />
+                    <img className="icon" src={Reacticon} alt="React logo" />
                 </div>
-                <p className="aboutPara" style={{width: "60%"}}>
-                    Nice to meet you!
-                    I am a recent graduate University of California, Merced where I recieved my Bachelor's degree in Computer Science & Engineering.
-                    <p>I am skilled in Javascript, REACT, HTML/CSS, C++ and Python</p>
-                </p>
-                <p className="aboutPara" >
-                    Let's get in touch!
-                    <br></br><a href="https://www.linkedin.com/in/aren-aguila-454072197/" style={{color: "#177e89"}}> Linkedin </a>
-                    arenaguila02@gmail.com
-                </p>
+
+                {/* Bio Section */}
+                <div className="aboutText" style={{ width: "60%" }}>
+                    <p className="aboutPara">
+                        Nice to meet you! I am a recent graduate from the University of California, Merced, where I received my Bachelor's degree in Computer Science & Engineering.
+                    </p>
+                    <p className="aboutPara">
+                        I am skilled in JavaScript, React, HTML/CSS, C++, and Python.
+                    </p>
+                </div>
+
+                {/* Get in Touch Section */}
+                <div className="contactSection">
+                    {/* Notice we use a <div> here with the .aboutPara class so it can hold the links inside the green box */}
+                    <div className="aboutPara" style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "1.5rem" }}>
+                        <span style={{ margin: 0 }}>Let's get in touch!</span>
+                        <div className="contactLinks">
+                            <a 
+                                href="https://www.linkedin.com/in/aren-aguila-454072197/" 
+                                target="_blank" 
+                                rel="noopener noreferrer" 
+                            >
+                                LinkedIn
+                            </a>
+                            <a 
+                                href="https://github.com/Aren-Aguila" 
+                                target="_blank" 
+                                rel="noopener noreferrer" 
+                            >
+                                GitHub
+                            </a>
+                            <a 
+                                href="mailto:arenaguila02@gmail.com" 
+                            >
+                                arenaguila02@gmail.com
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     );
 }
 
-export default about;
+export default About;

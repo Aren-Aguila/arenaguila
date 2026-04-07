@@ -1,10 +1,10 @@
 .aboutContainer {
     color: #FFFCE8;
-    width: 100vw;
-    max-width: 100%;
+    width: 100%; /* Prevents horizontal scrolling */
     height: 100%;
     min-height: 100%;
 }
+
 .title {
     font-size: 4em;
 }
@@ -21,13 +21,12 @@
     gap: 1rem;
     padding-bottom: 4rem;
     flex-shrink: 1;
-    /*border: 3px solid white;*/
 }
 
 .logos {
     display: grid;
-    grid-template-columns: repeat(2, 10rem); /* Two columns */
-    grid-template-rows: repeat(2, 10rem); /* Two rows */
+    grid-template-columns: repeat(2, 10rem); 
+    grid-template-rows: repeat(2, 10rem); 
     width: auto;
     height: 100%;
     gap: 0.5rem;
@@ -39,10 +38,9 @@
     object-fit: contain;
 }
 
-
-p.aboutPara{
+/* Notice we removed the "p." so this applies to our new contact <div> as well! */
+.aboutPara {
     color: #361F1C;
-    font-size: 1.5em;
     width: auto;
     height: auto;
     margin: auto;
@@ -51,12 +49,33 @@ p.aboutPara{
     background-color: #B5DEAD;
     border-color: #361F1C;
     border: solid 0.25rem;
-    border-radius: 0.5em;
+    border-radius: 0.5em; 
     padding: 2rem;
-    -webkit-border-radius: 0.5em;
-    -moz-border-radius: 0.5em;
-    -ms-border-radius: 0.5em;
-    -o-border-radius: 0.5em;
+    
+    /* Forces long emails/links to break to a new line */
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+}
+
+.contactLinks {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap; /* links wrap on narrow screens */
+    color: #361F1C; 
+}
+
+.contactLinks a {
+    color: #177e89; 
+    text-decoration: none;
+    font-size: 1.2rem; /* slightly smaller link size for better fit */
+    word-break: break-all; /* aggressive safety net for links on mobile */
+    font-weight: bold;
+}
+
+.contactLinks a:hover {
+    text-decoration: underline; /* Nice visual feedback for users */
 }
 
 @media (max-width: 1100px) {
@@ -66,15 +85,18 @@ p.aboutPara{
         align-items: center;
         text-align: center;
         background-color: transparent;
+        padding: 0 1rem; /* prevent content touching screen edges */
     }
 
-    p.aboutPara{
-        height: 50%;
-        font-size: 1.5em;
+    .aboutPara {
+        height: auto; 
+        font-size: 1.2em; 
+        width: 90%; 
+        padding: 1.5rem;
     }
 
     .logos {
-        grid-template-columns: repeat(2, 5rem); /* Two columns */
-        grid-template-rows: repeat(2, 5rem); /* Two rows */
+        grid-template-columns: repeat(2, 5rem); 
+        grid-template-rows: repeat(2, 5rem); 
     }
 }

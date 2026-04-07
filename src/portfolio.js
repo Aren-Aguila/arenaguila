@@ -3,57 +3,50 @@ import { motion } from "framer-motion";
 import Swf from "./swfFilter.jpg";
 import Vista from "./vistaFilter.jpg";
 import F3 from "./f3Filter.jpg";
+import Shopify from "./shopifylogo.png";
 import "./portfolio.css";
 import "./App.css";
 
-function portfolio() {
-    return (
-        <div className="portfolioBody">
-            <div className="title" style={{textAlign: "center"}}>Featured Work</div>
-        <motion.div className="cardContainer">
-            <motion.div
-                className="card"
-                whileHover={{
-                    scale: 1.05,
-                    transition: { duration: 0.5, type: "spring", bounce: 0.3 },
-                    cursor: "pointer",
-                }}
-                  whileTap={{ scale: 1.025 }}
-            >
-                <img src={Swf} alt="swfpic" className="cardimg"></img>
-                SWF
-                <a href="https://securewaterfuture.net/"><span></span></a>
-                
-            </motion.div>
-            <motion.div 
-                className="card" 
-                whileHover={{
-                    scale: 1.05,
-                    transition: { duration: 0.5, type: "spring", bounce: 0.3 },
-                    cursor: "pointer",
-                }}
-                  whileTap={{ scale: 1.025 }}
-            >
-                    <img src={Vista} alt="vistapic" className="cardimg"></img>
-                    VISTA
-                    <a href="https://vista.ucmerced.edu/"><span></span></a>
-            </motion.div>
-            <motion.div 
-                className="card" 
-                whileHover={{
-                    scale: 1.05,
-                    transition: { duration: 0.5, type: "spring", bounce: 0.3 },
-                    cursor: "pointer",
-                }}
-                  whileTap={{ scale: 1.025 }}
-            >
-                <img src={F3} alt="f3pic" className="cardimg"></img>
-                F3
-                <a href="https://vista.ucmerced.edu/f3/"><span></span></a>
-             </motion.div>
-        </motion.div>
-    </div>
-    );
-};
+// 1. Create a data array to easily manage your projects
+const projects = [
+  { id: 1, title: "SWF", image: Swf, link: "https://securewaterfuture.net/" },
+  { id: 2, title: "VISTA", image: Vista, link: "https://vista.ucmerced.edu/" },
+  { id: 3, title: "F3", image: F3, link: "https://vista.ucmerced.edu/f3/" },
+  { id: 4, title: "Shopify Storefront", image: Shopify, link: "https://myogoblin-2.myshopify.com/" },
+  // Setting up an array makes it incredibly easy to add your other work later:
+  // { id: 4, title: "UNIFOODI", image: UnifoodiImg, link: "..." },
+  // { id: 5, title: "Myogoblin Shopify", image: MyogoblinImg, link: "..." },
+];
 
-export default portfolio;
+// 2. PascalCase for React components
+function Portfolio() {
+  return (
+    <div className="portfolioBody">
+      <div className="title" style={{ textAlign: "center" }}>My Work</div>
+      
+      <motion.div className="cardContainer">
+        {/* 3. Map through the data to generate cards dynamically */}
+        {projects.map((project) => (
+          <motion.a
+            key={project.id}
+            href={project.link}
+            target="_blank"
+            rel="noopener noreferrer" // Security best practice for external links
+            className="card"
+            style={{ textDecoration: "none", color: "inherit" }} 
+            whileHover={{
+              scale: 1.05,
+              transition: { duration: 0.5, type: "spring", bounce: 0.3 },
+            }}
+            whileTap={{ scale: 1.025 }}
+          >
+            <img src={project.image} alt={`${project.title} preview`} className="cardimg" />
+            {project.title}
+          </motion.a>
+        ))}
+      </motion.div>
+    </div>
+  );
+}
+
+export default Portfolio;

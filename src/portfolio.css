@@ -3,23 +3,22 @@
     border-top: solid #6A3E37 0.5rem;
     border-bottom: solid #6A3E37 0.5rem;
     margin-top: 2rem;
-    height: 100vh;
-    max-height: 100vh;
-    width: 100vw;
-    max-width: 100%;
-    /* border: 3px solid white; */
+    min-height: 100vh; /* Allows section to grow for scalability */
+    width: 100%; /* Prevents horizontal scrolling issues from 100vw */
     display: flex;
     flex-direction: column;
     gap: 5rem;
+    padding-bottom: 5rem; /* Breath room */
 }
 
 .cardContainer {
     width: 70vw;
-    height: 60vh;
+    min-height: 60vh; /* Scalable height for future projects */
     color: #361F1C;
-    font-size: 4em;
+    /* font-size: 4em; <-- Removed previous large base size to prevent monstrous card text inheritance */
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap; /* Scalable if you add more projects */
     justify-content: center;
     align-items: center;
     margin: auto;
@@ -27,7 +26,7 @@
     margin-top: 0;
     max-width: 75%;
     gap: 5rem;
-    overflow-y: clip;
+    overflow-y: visible; /* Prevents visual cutoffs on animations */
 }
 
 .card {
@@ -35,10 +34,16 @@
     text-align: center;
     height: 20rem;
     width: 25%;
-    max-width: 25%;
-    transform-origin: "10% 60%";
+    min-width: 250px; /* Pre-emptive width for mid-size screens */
+    transform-origin: 10% 60%; /* Quotes removed previously */
     border-radius: 1rem;
     background-color: #FFFCE8;
+    text-decoration: none; /* remove underlines on links */
+    font-size: 1.5rem; /* <<< SMALLER DESKTOP FONT SIZE ADDED HERE >>> ensures text fits & balances */
+    display: flex; /* vertical alignment */
+    flex-direction: column; /* elements stacked vertically */
+    justify-content: center; /* center contents vertically within card height */
+    padding: 1.5rem 1rem; /* padding: top/bottom left/right - refined for balance */
 }
 
 .cardimg{
@@ -47,7 +52,7 @@
     height: 70%;
     display: block;
     margin: auto;
-    padding-top: 1rem;
+    margin-bottom: 1rem; /* ensure space between image and text below, helping fit/spacing */
 }
 
 .title {
@@ -55,28 +60,27 @@
     color: #361F1C;
 }
 
-span {
-    position:absolute; 
-    width:100%;
-    height:100%;
-    top:0;
-    left: 0;
-    z-index: 1;
-}
+/* span block removed as links are now direct motion.a elements */
 
 @media (max-width: 1100px) {
     .cardContainer{
         flex-direction: column;
+        flex-wrap: nowrap; /* stacked vertically in mobile */
         border: 3px solid #177E89;
         border-radius: 1rem;
         overflow-y: scroll;
         height: 75vh;
         width: 80vw;
+        gap: 2rem; /* reduced mobile gap */
+        padding: 2rem 0; /* padding inside scroll container */
     }
     .card{
         width: 90%;
         max-width: 90%;
-        height: 45%;
-        font-size: 0.5em;
+        min-height: 45%; /* Flexbile height */
+        flex-shrink: 0; /* prevent mobile squishing on scrolling */
+        font-size: 1.2rem; /* <<< EXPLICIT MOBILE SMALLER FONT SIZE ADDED HERE >>> explicit reasonable mobile size */
+        padding: 1rem; /* smaller mobile padding, still ensuring flex centering inherited from base */
+        margin-top: 1rem; /* added small mobile margin top for spacing between stacked cards */
     }
 }
