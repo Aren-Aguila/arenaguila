@@ -9,7 +9,7 @@ import "./App.css";
 
 // 1. Create a data array to easily manage your projects
 const projects = [
-  { id: 1, title: "Shopify Storefront", image: Shopify, link: "https://myogoblin-2.myshopify.com/" },
+  // { id: 1, title: "Shopify Storefront", image: Shopify, link: "https://myogoblin-2.myshopify.com/" },
   { id: 2, title: "VISTA", image: Vista, link: "https://vista.ucmerced.edu/" },
   { id: 3, title: "F3", image: F3, link: "https://vista.ucmerced.edu/f3/" },
   { id: 4, title: "SWF", image: Swf, link: "https://securewaterfuture.net/" },
