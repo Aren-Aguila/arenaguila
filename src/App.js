@@ -38,14 +38,17 @@ function App() {
     <div className="App">
       <motion.button 
         className="open-btn" 
+        type="button"
         aria-label="Open navigation menu"
+        aria-expanded={isOpen}
+        aria-controls="side-navigation"
         onClick={() => setIsOpen(true)}
         whileHover={{
-          color: "#058ED9",
+          color: "#2f6fed",
           transition: { duration: 0.2, type: "spring" },
         }}
       >
-        <FontAwesomeIcon icon={faBars} style={{ fontSize: "1.5em", color: "#361F1C" }} />
+        <FontAwesomeIcon icon={faBars} style={{ fontSize: "1.35em" }} />
       </motion.button>
       
       <SideNav isOpen={isOpen} closeNav={() => setIsOpen(false)} />

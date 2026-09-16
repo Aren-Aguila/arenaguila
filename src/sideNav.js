@@ -14,48 +14,57 @@ const scrollToSection = (id) => {
 const SideNav = ({ isOpen, closeNav }) => {
   return (
     <motion.div
+      id="side-navigation"
       className="sidenav"
       initial={{ x: "-100%" }}
       animate={{ x: isOpen ? "0%" : "-100%" }}
       transition={{ duration: 0.5, ease: "easeInOut", type: "spring" }}
+      aria-label="Main navigation"
     >
-      <button onClick={closeNav} className="close-btn">
+      <button type="button" onClick={closeNav} className="close-btn" aria-label="Close navigation menu">
         <FontAwesomeIcon icon={faTimes} />
       </button>
       <motion.button 
-      onClick={() => scrollToSection("intro")} 
-      className="navElem"
-      whileHover={{
-        scale: 1.2,
-        rotate: 0,
-        transition: { duration: 0.5, type: "spring", bounce: 0.5 },
-        cursor: "pointer",
-    }}
-      whileTap={{ scale: 1.1 }}
+        type="button"
+        onClick={() => scrollToSection("intro")} 
+        className="navElem"
+        aria-label="Go to introduction"
+        whileHover={{
+          scale: 1.02,
+          transition: { duration: 0.2 },
+          cursor: "pointer",
+        }}
+        whileTap={{ scale: 0.98 }}
       >
         Who
       </motion.button>
       <motion.button 
-      onClick={() => scrollToSection("port")} 
-      className="navElem"
-      whileHover={{
-        scale: 1.2,
-        rotate: 0,
-        transition: { duration: 0.5, type: "spring", bounce: 0.5 },
-        cursor: "pointer",
-      }}>
-      Portfolio
+        type="button"
+        onClick={() => scrollToSection("port")} 
+        className="navElem"
+        aria-label="Go to portfolio"
+        whileHover={{
+          scale: 1.02,
+          transition: { duration: 0.2 },
+          cursor: "pointer",
+        }}
+        whileTap={{ scale: 0.98 }}
+      >
+        Portfolio
       </motion.button>
       <motion.button 
-      onClick={() => scrollToSection("about")} 
-      className="navElem"
-      whileHover={{
-        scale: 1.2,
-        rotate: 0,
-        transition: { duration: 0.5, type: "spring", bounce: 0.5 },
-        cursor: "pointer",
-      }}>
-      About
+        type="button"
+        onClick={() => scrollToSection("about")} 
+        className="navElem"
+        aria-label="Go to about section"
+        whileHover={{
+          scale: 1.02,
+          transition: { duration: 0.2 },
+          cursor: "pointer",
+        }}
+        whileTap={{ scale: 0.98 }}
+      >
+        About
       </motion.button>
     </motion.div>
   );

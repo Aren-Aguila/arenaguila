@@ -1,53 +1,77 @@
 .sidenav {
-    height: 100%;   
-    position: fixed; 
-    z-index: 1; 
-    top: 0; 
-    left: 0; 
-    background-color: #A8763E; 
-    overflow-x: hidden; 
-    display: flex; 
-    flex-direction: column; 
-    align-items: center;
-    gap: 2rem;
-    padding-top: 20px;
-    width: 15%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    height: 100vh;
+    width: min(220px, 74vw);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.7rem;
+    padding: 1rem 0.9rem 1.5rem;
+    background: rgba(255, 255, 255, 0.9);
+    border-right: 1px solid var(--line);
+    box-shadow: 0 18px 32px rgba(17, 24, 39, 0.08);
+    backdrop-filter: blur(10px);
 }
 
 .navElem {
+    width: 100%;
+    text-align: left;
+    padding: 0.8rem 0.75rem;
+    border-radius: 0.75rem;
+    color: var(--ink);
+    font-size: 0.82rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
     text-decoration: none;
-    color: #FFFCE8;
-    font-family: "NPS";
-    font-size: 2em;
+    background: transparent;
+}
+
+.navElem:hover {
+    background: var(--accent-soft);
+    color: var(--accent);
 }
 
 button {
     background: none;
-	color: inherit;
-	border: none;
-	padding: 0;
-	font: inherit;
-	cursor: pointer;
-	outline: inherit;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
 }
 
 .close-btn {
-    background: none;
-    border: none;
-    color: white;
-    font-size: 2em;
-    cursor: pointer;
-    align-self: flex-start;
-    margin-left: 10px;
+    align-self: flex-end;
+    width: 2.2rem;
+    height: 2.2rem;
+    border-radius: 999px;
+    color: var(--ink);
+    font-size: 0.95rem;
+    margin-bottom: 0.6rem;
+}
+
+.close-btn:hover {
+    background: var(--accent-soft);
 }
 
 .open-btn {
-    background: none;
-    border: none;
-    color: white;
-    font-size: 2em;
-    cursor: pointer;
     position: fixed;
-    top: 10px;
-    left: 10px;
+    top: 1rem;
+    left: 1rem;
+    z-index: 10;
+    width: 2.7rem;
+    height: 2.7rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.78);
+    border: 1px solid var(--line);
+    box-shadow: 0 8px 16px rgba(17, 24, 39, 0.05);
+    color: var(--ink);
 }

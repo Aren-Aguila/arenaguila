@@ -1,8 +1,21 @@
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
-test('renders learn react link', () => {
+jest.mock('lenis', () => {
+  const LenisMock = function () {
+    return {
+      raf: jest.fn(),
+      destroy: jest.fn(),
+    };
+  };
+
+  return {
+    __esModule: true,
+    default: LenisMock,
+  };
+});
+
+test('renders the intro heading', () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+  expect(screen.getByText(/hi, i['’]m aren aguila/i)).toBeInTheDocument();
 });
